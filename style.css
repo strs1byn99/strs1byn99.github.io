@@ -1,0 +1,329 @@
+@import url(https://fonts.googleapis.com/css?family=Lato|Raleway&subset=latin,latin-ext);
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.company-name
+{
+    color: black; 
+    text-decoration: none;
+}
+.company-name:hover
+{
+    color: black; 
+    text-decoration: none;
+    opacity: .7;
+}
+/*----------Header CSS-----------*/
+#header
+{
+    width: 100%;
+    height: 45vh;
+    background-color: green;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Raleway', sans-serif;
+}
+.nav-bar
+{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+.nav-bar .fa-bars
+{
+    color: #fff;
+    font-size: 35px;
+}
+.navbar-nav
+{
+    float: right;
+    text-align: right;
+}
+.navbar
+{
+    background-color: green;
+}
+.nav-link 
+{
+    color: #fff;
+}
+.nav-link:hover
+{
+    color: rgba(255,255,255,.7);
+}
+.navbar-brand
+{
+    color: #fff;
+}
+.navbar-brand:hover
+{
+    color: rgba(255,255,255,.7);
+}
+.user-box
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.user-box img
+{
+    border-radius: 50%;
+    width: 250px;
+    border: 2px solid #fff;
+}
+.user-box h1
+{
+    color: #000;
+    font-weight: bold;
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+.user-box p
+{
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+}
+.user-box .fa-github
+{
+    color: #000;
+    font-size: 30px;
+}
+.user-box .fa-linkedin-square
+{
+    color: #000;
+    font-size: 30px;
+}
+.user-box .fa-envelope
+{
+    color: #000;
+    font-size: 26px;
+}
+.user-box .fa-file-pdf-o
+{
+    color: #000;
+    font-size: 26px;
+}
+.contact
+{
+   padding-left: 15px;
+} 
+.contact:hover
+{
+    opacity: .7;
+}
+/*------------User-Info Section-----------*/
+/*------About me------*/
+.about
+{
+    margin-top: 30vh;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Raleway', sans-serif;
+}
+.row {
+    display: flex;
+}
+.column {
+    flex: 50%;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.bg-about{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background-color: #f9f9f9;
+}
+/*------Skills------*/
+.skills
+{
+    margin: 30px;
+    padding-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+.skills h3
+{
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.skills-bar p
+{
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+.progress
+{
+    border-radius: 16px !important;
+    margin-bottom: 10px;
+}
+.skill80
+{
+    border-radius: 16px;
+    background: #000 !important;
+    animation: skill80 2s;
+}
+.skill70
+{
+    border-radius: 16px;
+    background: #000 !important;
+    animation: skill70 2s;
+}
+.skill60
+{
+    border-radius: 16px;
+    background: #000 !important;
+    animation: skill60 2s;
+}
+.skill50
+{
+    border-radius: 16px;
+    background: #000 !important;
+    animation: skill50 2s;
+}
+.bg-skills{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+@keyframes skill80
+{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@keyframes skill70
+{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@keyframes skill60
+{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+@keyframes skill50
+{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+.aa
+{
+    animation: skill80 2s;
+}
+/*------Experience------*/
+.experience
+{
+    margin: 30px;
+    float: center;
+    width:100%; max-width:100%
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+.experience h3
+{
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.timeline
+{
+    list-style-type: none;
+    position: relative;
+}
+.timeline:before
+{
+    content: '';
+    background: #000;
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 2px;
+    height: 110%;
+    z-index: 1;
+}
+.timeline .company:before
+{
+    content: '';
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #000;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+.date
+{
+    float: right;
+}
+.bg-expr{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background-color: #f9f9f9;
+}
+/*------Projects------*/
+.projects h3
+{
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.project-list
+{
+    list-style-type: none;
+    position: relative;
+}
+.bg-pro{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+/*------------Footer Section-----------*/
+#footer
+{
+    width: 100%;
+    height: 5vh;
+    background-color: green;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Raleway', sans-serif;
+}
+.footer p
+{
+    padding-top: 10px;
+}
+.fa-heart-o
+{
+    color: red;
+}
