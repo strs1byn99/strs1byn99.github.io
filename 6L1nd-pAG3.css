@@ -1,0 +1,10 @@
+.background {
+	width: 70%; 
+	margin: 10% auto;
+}
+
+/*@media screen and (max-width: 900px) {
+  .background {
+    width: 95%;
+  }
+}*/
