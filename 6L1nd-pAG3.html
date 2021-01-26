@@ -10,11 +10,27 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="6L1nd-pAG3.css">
+	<style>
+		.light-mode {
+			background-color: white !important;
+			color: black !important;
+		}
+		.switchText {
+			color: black !important;
+		}
+	</style>
 </head>
 <body style="font-family: 'Raleway',sans-serif !important; margin: 0; padding: 0; background-color: #1C1C1E">
 
 <div class="background" >
-<table class="table table-striped table-hover table-dark table-bordered">
+<div id="switch" style="color: white; float: right;">
+	<label class="form-switch">
+	  <input onclick="switchMode()" type="checkbox">
+	  <i></i>
+	  <span id="mode"></span>
+	</label>
+</div>
+<table id="tbl" class="table table-striped table-hover table-dark table-bordered">
   <thead>
     <tr>
       <th scope="col" class="text-center">Homework</th>
@@ -61,6 +77,28 @@
   </tbody>
 </table>
 </div>
+
+<script>
+var dark_mode = 1;
+document.getElementById("mode").innerHTML = "Light Mode";
+function switchMode() {
+   var element1 = document.body;
+   element1.classList.toggle("light-mode");
+   var element2 = document.getElementById("tbl");
+   element2.classList.toggle("table-dark");
+   var swtch = document.getElementById("switch");
+   swtch.classList.toggle("switchText");
+   mode = "Dark Mode";
+   if (dark_mode == 1) {
+   	document.getElementById("mode").innerHTML = "Dark Mode";
+   	dark_mode = 0;
+   } else {
+   	document.getElementById("mode").innerHTML = "Light Mode";
+   	dark_mode = 1;
+   }
+}
+</script>
+
 
 </body>
 </html>
