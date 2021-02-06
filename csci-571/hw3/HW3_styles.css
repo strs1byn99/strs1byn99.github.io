@@ -1,0 +1,167 @@
+body {
+	margin: 0;
+}
+
+.super-background {
+	background-color: white;
+	width: 868px;
+}
+
+.restaurant-img {
+	width: 785px;
+	height: 557px;
+	margin-left: 40px;
+	position: fixed;
+}
+
+.background {
+	position: relative;
+	width: 868px;
+	height: 675px;
+	z-index: 100;
+}
+
+.title {
+	background-color: white;
+	height: 50px;
+	color: #000066;
+	text-align: center;
+	padding-top: 15px;
+	font-weight: bold;
+}
+
+.title-text {
+	font-size: 30px;
+	padding-top: 5px;
+	/* font family */
+}
+
+.nav-bar {
+	background-color: #ffe6cc;
+	padding-left: 50px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-size: 17px;
+	font-family: sans-serif;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+	outline: 0;
+}
+
+a:visited {
+	color: purple;
+	text-decoration: none;
+}
+
+.nav {
+	margin: 3px;
+}
+
+.main-pic {
+	height: 430px;
+}
+
+.main-pic-frame {
+	border-top: 30px solid white;
+	border-left: 70px solid white;
+	border-right: 70px solid white;
+	border-bottom: 40px solid white;
+}
+
+.transparent-space {
+	height: 450px;
+}
+
+.main-pic-text {
+	z-index: 1000;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 130px;
+	padding-left: 30px;
+	color: #fff3e6;
+}
+
+.main-pic-box {
+	background-color: white;
+	width: 140px;
+	margin-left: 450px;
+	margin-top: 28px;
+	padding: 7px 4px;
+	text-align: center;
+	font-size: 11px;
+	border: solid black;
+	border-style: double;
+	font-family: sans-serif;
+}
+
+.headline {
+	background-color: white;
+	height: 40px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.headline-text {
+	text-decoration-line: underline;
+	text-decoration-style: double;
+	font-size: 20px;
+	color: #660066;
+	font-weight: bold;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.cuisines-list {
+	background-color: white;
+	height: 1225px;
+}
+
+.row {
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+	float: left;
+	width: 50%;
+}
+
+.col1 {
+	/*background-color: yellow;*/
+}
+
+.food-img {
+	width: 350px; 
+	height: 250px;
+}
+
+.col1-img {
+	border: 10px solid #ffe6e6;
+	float: right;
+}
+
+.col2-img {
+	border: 10px solid #99ddff;
+}
+
+.cuisine-text {
+	margin-left: 65px;
+	margin-right: 85px;
+	margin-top: 100px;
+	font-size: 16px;
+	color: black;
+}
+
+.cuisine-intro {
+	color: #003cb3;
+	font-weight: bold;
+}
