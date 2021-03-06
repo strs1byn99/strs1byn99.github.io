@@ -2,7 +2,7 @@ from flask import Flask, request
 from flask_cors import CORS, cross_origin
 import requests, json
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='', static_folder='static', template_folder='templ')
 cors = CORS(app)
 
 API_KEY = "59e1a8bdd05f5059f7a2fe4b65ed990c"
@@ -10,8 +10,8 @@ API_KEY = "59e1a8bdd05f5059f7a2fe4b65ed990c"
 DOMAIN = "https://api.themoviedb.org"
 
 @app.route("/")
-def test():
-    return "hello world!"
+def root():
+    return app.send_static_file('index.html')
 
 @app.route("/home", methods=['GET'])
 def get_slideshow_data():
@@ -224,4 +224,4 @@ def get_genres():
     return json.dumps([movie, tv])
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run()
