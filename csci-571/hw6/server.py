@@ -43,8 +43,9 @@ def search_movie():
     url = DOMAIN + ("/3/search/movie?api_key=%s" % API_KEY) + ("&query=%s" % query) + \
         "&language=en-US&page=1&include_adult=false"
     res = json.loads(requests.get(url).text)
+    res = res["results"][:10] if len(res["results"]) > 10 else res["results"]
     l = []
-    for each in res["results"]:
+    for each in res:
         movie = dict()
         movie["id"] = each.get("id")
         movie["title"] = each.get("title")
@@ -65,8 +66,9 @@ def search_tv():
     url = DOMAIN + ("/3/search/tv?api_key=%s" % API_KEY) + ("&query=%s" % query) + \
         "&language=en-US&page=1&include_adult=false"
     res = json.loads(requests.get(url).text)
+    res = res["results"][:10] if len(res["results"]) > 10 else res["results"]
     l = []
-    for each in res["results"]:
+    for each in res:
         tv = dict()
         tv["id"] = each.get("id")
         tv["name"] = each.get("name")
@@ -106,6 +108,7 @@ def search_multi():
         d["vote_count"] = each.get("vote_count")
         d["genre_ids"] = each.get("genre_ids")
         l.append(d)
+    l = l[:10] if len(l) > 10 else l
     return json.dumps(l)
 
 @app.route("/movie/<movie_id>", methods=['GET'])
