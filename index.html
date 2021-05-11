@@ -199,9 +199,41 @@
     <div class="bg-pro" id="bg-pro">
     <div class="projects container" id="projects">
         <h3>Projects</h3>
-        <p>
             <ul class="project-list">
-            	<li class="project-item">
+                <li class="project-item">
+                    <h4>Movie Search System (Angular, Express)</h4>
+                    <h6><b>Individual</b>&nbsp;
+                        <a href="https://github.com/strs1byn99/TMDB_Angular">code</a>&nbsp;
+                        <a href="">link</a>
+                    </h6>
+                    <p>
+                       Deployed a full-stack movie and TV show search website for user to search related movies/TV shows<br>
+					   Built a single-page application with routes<br>
+					   Developed a responsive and interactive webpage with AngularJS, HTML5, and CSS3<br>
+					   Implemented RESTful APIs to retrieve data from TMDB API using Express.js<br>
+                    </p>
+                </li>
+                <li class="project-item">
+                    <h4>Films - Android App (Java, Express)</h4>
+                    <h6><b>Individual</b>&nbsp;
+                        <a href="https://github.com/strs1byn99/Films-Android-App">code</a>&nbsp;
+                        <a data-toggle="modal" data-target="#myModal" href="">demo</a></h6>
+                    <p>
+                       Accomplished an Android app for users to browse and search related movies and TV Shows with Android Studio<br>
+                       Developed an interactive User Interface using Java and XML<br>
+                       Handled HTTP requests and responses from TMDB API with Express.js
+                    </p>
+                </li>
+                <li class="project-item">
+                    <h4>Membership Management System (Spring boot)</h4>
+                    <h6><b>UCSC Chinese Alumni Association</b></h6>
+                    <p>
+                       Developed RESTful API endpoints to update and retrieve data from the database with Spring boot and Spring JPA<br>
+                       Wrote unit-tests on Controllers and Services, and tested endpoints on Postman<br>
+                       Applied Agile methodology and worked in a team of five to build a workable backstage management system
+                    </p>
+                </li>
+                <li class="project-item">
                     <h4>Wechat Mini Program (JavaScript, HTML/CSS)</h4>
                     <h6><b>UCSC Chinese Alumni Association</b></h6>
                     <p>
@@ -209,23 +241,14 @@
                        Built a User Interface for the relevant page with WXML/WXSS (like HTML/CSS)
                     </p>
                 </li>
-            	<li class="project-item">
+                <!-- <li class="project-item">
                     <h4>Multi-threaded HTTP Server (C)</h4>
                     <h6><b>Course: Principles of Computer Systems Design</b></h6>
                     <p>
                        Implemented multi-threading using pthread C library to handle requests from multiple clients simultaneously <br>
                        Performed logging to write out a record of each request simultaneously, including both response and data dumped as hex
                     </p>
-                </li>
-                <li class="project-item">
-                    <h4><a href="https://bythemoviedb.azurewebsites.net/">The Movie DB (HTML/CSS, JavaScript, Python)</a></h4>
-                    <h6><b>Individual</b></h6>
-                    <p>
-                       Developed a User Interface using HTML5/CSS3 to display trending movies/tv shows and search results<br>
-                       Implemented API calls to retrieve data from the TMDB database using Flask<br>
-                       Deployed on Azure
-                    </p>
-                </li>
+                </li> -->
                 <!-- <li class="project-item">
                     <h4><a href="https://2x19m.csb.app/" style="text-decoration: none; color: black;">Hacker News Search</a> (React.js)</h4>
                     <h6><b>Individual</b></h6>
@@ -234,25 +257,26 @@
                        Delivered a working web application to browse articles in two weeks
                     </p>
                 </li> -->
-                <!-- <li class="project-item">
-                    <h4>Fault-Tolerant Key-Value Store (Python)</h4>
-                    <h6><b>Team</b></h6>
-                    <p>
-                        Implemented RESTful web services accepting API calls from Docker platform<br>
-                        Developed an overall distributed key-value store with strong consistency that can store more data than can fit into one single machine, using consistent hashing
-                    </p>
-                </li> -->
-<!--                 <li class="project-item">
-                    <h4>Tiny Language Interpreter (Haskell, Python, Scala)</h4>
-                    <h6><b>Individual</b></h6>
-                    <p>
-                       Wrote three versions(Haskell, Python, and Scala) of the language interpreter for a tiny programming language, which contains four types of statements: let <i>variableName</i> = <i>expression</i>, if <i>expression</i> goto <i>label</i>, print <i>expression</i>(s), input <i>variableName</i>.
-                    </p>
-                </li> -->
-
             </ul>
         </p>
     </div>
+    </div>
+
+	<!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          	<h4 class="modal-title" id="myModalLabel">Films Android App Demo</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <video controls id="video1" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
+              <source src="img/FilmsAppDemo.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
     </div>
 
 </section>
@@ -269,7 +293,7 @@
 <!-------- Smooth Scroll --------->
 <script type="text/javascript" src="smooth-scroll.js"></script>
 <script>
-    var scroll = new SmoothScroll('a[href*="#"]');
+var scroll = new SmoothScroll('a[href*="#"]');
 </script>
 
 </body>
