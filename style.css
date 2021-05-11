@@ -127,14 +127,30 @@ body
     padding-bottom: 100px;
     font-family: 'Raleway', sans-serif;
 }
-.row {
-    display: flex;
+
+/* responsiveness */
+@media (max-width: 991px) {
+    .row {
+        display: flex;
+    }
+    .column {
+        flex: 100%;
+        width: 100%;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
 }
-.column {
-    flex: 50%;
-    padding-right: 50px;
-    padding-left: 50px;
+@media (min-width: 992px) {
+    .row {
+        display: flex;
+    }
+    .column {
+        flex: 50%;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
 }
+
 .bg-about{
     width: 100%;
     padding-top: 60px;
@@ -265,7 +281,7 @@ body
     position: absolute;
     left: 8px;
     width: 2px;
-    height: 110%;
+    height: 100%;
     z-index: 1;
 }
 .timeline .company:before
