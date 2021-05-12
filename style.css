@@ -168,91 +168,33 @@ body
     padding: 30px;
     padding-bottom: 30px;
     font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: row;
 }
-.skills-pre 
+.skills-pre
 {
-    padding: 0 50px;
+    padding-right: 30px;
+    flex: 1 1 0;
+    width: 0;
 }
-/*.skills h3
+.skills-text 
 {
-    color: black;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-left: 30px;
+    flex: 1 1 0;
+    width: 0;
 }
-
-.skills-bar p
-{
-    margin-bottom: 6px;
-    font-weight: 700;
-}
-.progress
-{
-    border-radius: 16px !important;
-    margin-bottom: 10px;
-}
-.skill80
-{
-    border-radius: 16px;
-    background: #000 !important;
-    animation: skill80 2s;
-}
-.skill70
-{
-    border-radius: 16px;
-    background: #000 !important;
-    animation: skill70 2s;
-}
-.skill60
-{
-    border-radius: 16px;
-    background: #000 !important;
-    animation: skill60 2s;
-}
-.skill50
-{
-    border-radius: 16px;
-    background: #000 !important;
-    animation: skill50 2s;
-}*/
-/*@keyframes skill80
-{
-    0% {
-        width: 0%;
+@media (max-width: 991px) {
+    .skills {
+        flex-direction: column;
     }
-    100% {
-        width: 80%;
+    .skills-pre, .skills-text {
+        width: 100%;
+        padding: 0 30px 30px;
     }
 }
-@keyframes skill70
+/*.skills-pre pre 
 {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 70%;
-    }
-}
-@keyframes skill60
-{
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 60%;
-    }
-}
-@keyframes skill50
-{
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 50%;
-    }
-}
-.aa
-{
-    animation: skill80 2s;
+    white-space: pre-wrap;
 }*/
 /*------Experience------*/
 .experience
